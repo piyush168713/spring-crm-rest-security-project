@@ -1,0 +1,24 @@
+package com.luv2code.springdemo.dao;
+
+import com.luv2code.springdemo.entity.Customer;
+
+import java.util.List;
+
+public interface CustomerDAO {
+
+    List<Customer> getCustomers();
+
+    void saveCustomer(Customer theCustomer);
+
+    Customer getCustomer(int theId);
+
+    void deleteCustomer(int theId);
+
+    List<Customer> searchCustomers(String theName);
+
+    List<Customer> sortByFirstName();
+
+    List<Customer> sortByLastName();
+
+    List<Customer> sortByEmail();
+}
